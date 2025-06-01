@@ -6,7 +6,12 @@ const bodyparser=require("body-parser")
 const path=require("path")
 const ejs=require("ejs")
 const route=require("./routes/route")
-mongoose.connect("mongodb://127.0.0.1:27017/portfolioDB")
+//mongoose.connect("mongodb://127.0.0.1:27017/portfolioDB")
+// Par ceci (avec votre URI Atlas) :
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/mon_portfolio', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 //pour utiliser la methode POST
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
