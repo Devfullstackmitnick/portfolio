@@ -1,0 +1,137 @@
+<header>
+        <!--------------------Menu de navigation------------->
+
+  <!-- component -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* navigation 
+ - show navigation always on the large screen devices with (min-width:1024)
+*/
+
+@media (min-width: 1024px) {
+  .top-navbar {
+    display: inline-flex !important;
+  }
+}
+/* Solution radicale - empêche tout scroll horizontal */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Correction pour la section "Mes Valeurs" */
+  @media (max-width: 640px) {
+    .sm\:grid-cols-3 {
+      grid-template-columns: 1fr !important;
+    }
+    .px-9 {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  } 
+</style>
+
+<nav class="flex items-center bg-gray-800 p-3 flex-wrap font-['DM-Serif-Display'] text-xl font-semibold">
+      <a href="/" class="p-2 mr-4 inline-flex items-center">
+        <i class="fa-solid fa-user-secret text-white font-bold"></i>
+        <span class="text-xl text-white font-bold uppercase tracking-wide ml-1.5"
+          >IK.DEV</span
+        >
+      </a>
+      <button
+        class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+        data-target="#navigation"
+      >
+        <i class="material-icons">menu</i>
+      </button>
+      <div
+        class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+        id="navigation"
+      >
+        <div
+          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto"
+        >
+          <a
+            href="/"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Home</span>
+          </a>
+          <a
+            href="/competences"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Competences</span>
+          </a>
+          <a
+            href="/projets"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Projets</span>
+          </a>
+          <a
+            href="/contact"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Contact</span>
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+  $(".nav-toggler").each(function(_, navToggler) {
+    var target = $(navToggler).data("target");
+    $(navToggler).on("click", function() {
+      $(target).animate({
+        height: "toggle"
+      });
+    });
+  });
+});
+
+</script>
+
+
+<!----------------------------------------Banner-------------------------------------------------->
+<section class="pb-12 bg-gradient-to-b from-[#E8E3F5] via-[#EDEAFB] to-[#F7FAFC]">
+       <div class="items-center pt-12 px-8 mx-auto max-w-7xl lg:px-16 md:px-12">
+            <div class="justify-center w-full text-center lg:p-10 max-auto">
+                 <div class="justify-center w-full mx-auto">
+
+                     <div class="flex flex-col items-center justify-center max-w-xl gap-3 mx-auto lg:flex-row">
+                          <img class='w-32 h-32 rounded-full border border-[#E8E3F4]'src='./images/tof_profils.jpg'/>
+                     </div>
+
+      <!-----------------------
+        <p class="mt-4 sm:px-32 text-[#10172A] sm:text-xl text-sm font-semibold tracking-tighter">
+           by @Coderinbay 🏝️
+          </p>
+        -->
+                    <p class="sm:mt-8 mt-2.5 sm:px-44 text-[#10172A] text-4xl sm:text-6xl font-semibold tracking-tighter font-['DM-Serif-Display']">
+                        Je suis <span class="underline leading-8 underline-offset-8	decoration-8 decoration-[#1E2939]"> Kouame Isaac. </span> 
+                    </p>
+
+                    <p class="sm:mt-8 mt-2 text-[#10172A] sm:px-72  sm:leading-loose text-lg font-normal tracking-tighter font-['Montserrat']">
+                        Je suis un <span class="font-semibold">fullstack developer</span>, 24/24 <span class="font-semibold">travailleur</span> freelance, concepteur de  <span class="font-semibold">site web et application web,</span>. J'adore concevoir<span class="font-semibold"> des applications </span> et resoudre des problemes.
+                    </p>
+                </div>
+            </div>
+  
+      </div>
+<!----------------------------------------------bouton de mon cv--------------->
+      <div class="text-center space-x-4">
+          <button class="bg-[#1E2939] translate-y-1 text-[#fff] sm:text-lg text-xs font-bold py-2.5 px-6  rounded-full inline-flex items-center font-['DM-Serif-Display']">
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                 </svg>
+                &nbsp; &nbsp;<span><a href="#">Voir mon cv</a> </span>
+         </button>
+      </div>
+
+</section>
+</header>

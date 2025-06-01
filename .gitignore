@@ -1,0 +1,6 @@
+# Fichiers/dossiers à ignorer
+node_modules/      # Dossier des dépendances (trop lourd pour GitHub)
+.env              # Fichier avec vos variables secrètes (MongoDB, API keys, etc.)
+.DS_Store         # Fichier système macOS (inutile)
+npm-debug.log     # Fichiers de logs d'erreurs
+/dist             # Dossier de build (si vous utilisez TypeScript/Babel)

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title><%= title %></title>
+</head>
+<body>
+      <%- include("../partials/header.ejs") %>
+                 <!---------------------- Mes competences----------------------------------------------------------- -->
+<h1 class="text-dark uppercase font-bold text-[32px] sm:text-[36px] lg:text-[30px] xl:text-[36px] font-['DM-Serif-Display'] text-center ">
+MES COMPTENCES</h1>
+<div class="px-3 md:lg:xl:px-40  py-20 bg-opacity-10" style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png') ;">
+    <div class="grid grid-cols-1 md:lg:xl:grid-cols-3 group bg-white shadow-xl shadow-neutral-100 border ">
+          <div class="p-10 flex flex-col items-center text-center group  hover:bg-slate-50 cursor-pointer">
+            <span class="p-5 rounded-full bg-red-500 text-white shadow-lg shadow-red-200">               
+            <i class="fa-brands fa-html5 text-3xl"></i>
+            </span>
+            <p class="text-xl font-bold text-slate-700 mt-3 font-['DM-Serif-Display'] uppercase">Language de balisage HTML5</p>
+            <p class="mt-2 text-sm text-slate-500 text-center font-['Montserrat']">HTML5 utilisee pour injecter du contenu dans nos pages Web.</p>
+        </div>
+
+        <div
+            class="p-10 flex flex-col items-center text-center group  hover:bg-slate-50 cursor-pointer">
+            <span class="p-5 rounded-full bg-orange-500 text-white shadow-lg shadow-orange-200">
+                <i class="fa-brands fa-css3 text-3xl"></i>
+            </span>
+            <p class="text-xl font-bold text-slate-700 mt-3 font-['DM-Serif-Display'] uppercase">La feuille de style CSS3</p>
+            <p class="mt-2 text-sm text-slate-500 text-center font-['Montserrat']">CSS3 utiliser pour definir l'apparence de nos applications et site web .</p>
+        </div>
+
+        <div class="p-10 flex flex-col items-center text-center group  hover:bg-slate-50 cursor-pointer">
+            <span class="p-5 rounded-full bg-yellow-500 text-white shadow-lg shadow-yellow-200">
+                <i class="fa-brands fa-bootstrap text-3xl"></i>
+            </span>
+            <p class="text-xl font-bold text-slate-700 mt-3 font-['DM-Serif-Display'] uppercase">Tailwind css & Bootstrap: Framework CSS3 </p>
+            <p class="mt-2 text-sm text-slate-500 text-center font-['Montserrat']">J'utilise beaucoup les frameworks css pour aller plus vite sur mon front end et me
+                      concentrer plus sur mon Backend.Mais de preference j'utilise beaucoup Tailwind css que je considere comme meilleure. 
+            </p>
+        </div>
+
+
+        <div class="p-10 flex flex-col items-center text-center group    hover:bg-slate-50 cursor-pointer">
+            <span class="p-5 rounded-full bg-lime-500 text-white shadow-lg shadow-lime-200">
+                <i class="fa-brands fa-js text-3xl"></i>
+            </span>
+            <p class="text-xl font-bold text-slate-700 mt-3 font-['DM-Serif-Display'] uppercase">JavaScript ES6+</p>
+            <p class="mt-2 text-sm text-slate-500 text-center font-['Montserrat']">Le JavaScript est le language que j'utilise pour l'interactivite de mes pages web.</p>
+        </div>
+
+        <div class="p-10 flex flex-col items-center text-center group  hover:bg-slate-50 cursor-pointer">
+            <span class="p-5 rounded-full bg-teal-500 text-white shadow-lg shadow-teal-200">
+                <i class="fa-brands fa-node text-3xl"></i>
+            </span>
+            <p class="text-xl font-bold text-slate-700 mt-3 font-['DM-Serif-Display'] uppercase">NODEJS & EXPRESSJS: Bibliotheque JS</p>
+            <p class="mt-2 text-sm text-slate-500 text-justify  font-['Montserrat']">L'environnement JS me captive beaucoup et donc raison pour laquelle j'ai decider
+                d'utiliser NODEJS comme language serveur pour mon deploiement Backend.
+                Aussi le framework EXPRESS que j'utilise toujours me facilite vraiment la tache avec le modele MVC(Model Vue Controller)
+                qui est d'une clarite pour mieux soigner son code BACKEND.<br>
+                    -Express.js : création d’API REST, middlewares, routes<br>
+                    -Node.js : environnement d’exécution, fs, path, http, etc.<br>
+                    -Routing avancé, req, res, next()<br>
+                    -Middlewares personnalisés<br>
+                    -Architecture MVC
+                
+            </p>
+        </div>
+
+        <div class="p-10 flex flex-col items-center text-center group  hover:bg-slate-50 cursor-pointer">
+            <span class="p-5 rounded-full bg-indigo-500 text-white shadow-lg shadow-indigo-200">
+                <i class="fa-solid fa-database text-3xl"></i>
+            </span>
+            <p class="text-xl font-bold text-slate-700 mt-3 font-['DM-Serif-Display']">MONGODB : SGBD NO SQL</p>
+            <p class="mt-2 text-sm text-slate-500 text-justify font-['Montserrat']">Mondodb est le systeme de gestion de base de donnee que j'utilse pour stocker les donnees
+                de mes sites web et applications web. Les donnees tel que les enregistrements des formulaires ou stocker des articles pour les applications
+                de E-Commerces et autres. Son utilisation est facilite par le module MONGOOSE qui me permet de interagir avec Mongodb.<br>
+                MongoDB + Mongoose : schémas, modèles, requêtes, validations<br>
+                Connexion sécurisée, gestion des erreurs  
+            </p>
+        </div>
+        <!-------------------------------------------------------------------------->
+        <div
+            class="p-10 flex flex-col items-center text-center group  hover:bg-slate-50 cursor-pointer">
+            <span class="p-5 rounded-full bg-red-500 text-white shadow-lg shadow-red-200">
+                
+                <i class="fa-brands fa-wordpress text-3xl"></i>
+            </span>
+            <p class="text-xl font-bold text-slate-700 mt-3 font-['DM-Serif-Display']">CMS WORDPRESS</p>
+            <p class="mt-2 text-sm text-slate-500 text-center font-['Montserrat']">WORDPRESS est un systeme de gestion de contenu pour creer des sites web et application web. 
+                Je fais recours a ce systeme pour developper rapidement des sites vitrines pour des entreprises</p>
+        </div>
+
+        <div
+            class="p-10 flex flex-col items-center text-center group  hover:bg-slate-50 cursor-pointer">
+            <span class="p-5 rounded-full bg-orange-500 text-white shadow-lg shadow-orange-200">
+                <i class="fa-solid fa-key text-3xl"></i>
+            </span>
+            <p class="text-xl font-bold text-slate-700 mt-3 font-['DM-Serif-Display']">SECURITE & DEPLOIEMENT</p>
+            <p class="mt-2 text-sm text-slate-500 text-justify font-['Montserrat']">
+                   -Validation des entrées (e.g. express-validator)<br>
+                   -Sécurisation des routes (JWT, sessions, bcrypt pour les mots de passe)<br>
+                   -Render, Railway, Vercel, Heroku, Netlify (selon stack)<br>
+                   -Procfile / scripts NPM / build<br>
+                   -MongoDB Atlas pour base de données cloud
+            </p>
+        </div>
+
+        <div class="p-10 flex flex-col items-center text-center group  hover:bg-slate-50 cursor-pointer">
+            <span class="p-5 rounded-full bg-yellow-500 text-white shadow-lg shadow-yellow-200">
+                <i class="fa-solid fa-screwdriver-wrench text-3xl"></i>
+            </span>
+            <p class="text-xl font-bold text-slate-700 mt-3 uppercase font-['DM-Serif-Display']">Outils & bonnes pratiques </p>
+            <p class="mt-2 text-sm text-slate-500 text-justify font-['Montserrat']">
+                    -Git + GitHub <br>
+                    -Postman pour tester les routes <br>
+                    -Dotenv pour les variables d'environnement <br>
+                    -Nodemon pour le dev auto-reload <br>
+                    -EJS ou React pour le rendu dynamique <br>
+                    -MVC, separation logique du code  
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+      <%- include("../partials/footer.ejs") %>
+</body>
+</html>
