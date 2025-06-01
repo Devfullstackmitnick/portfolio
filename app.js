@@ -1,4 +1,5 @@
 const express=require("express")
+const PORT = process.env.PORT || 10000;
 const app=express()
 const mongoose=require("mongoose")
 const bodyparser=require("body-parser")
@@ -20,8 +21,8 @@ app.set("views",path.join(__dirname, "views"))
 //la route generale est definit
 app.use("/", route)
 
-app.listen(3000, ()=>{
-    console.log("Serveur tourne sur le port 3000")
+app.listen(PORT, ()=>{
+    console.log(`Serveur tourne sur le port ${PORT}`)
 })
 
 app.use((req, res)=>{
